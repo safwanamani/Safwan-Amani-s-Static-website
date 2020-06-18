@@ -1,31 +1,34 @@
-body, html{
+body, html {
     margin: 0;
     padding: 0;
     font-family: 'Hind';
 }
-h1, h2, h3, h4, h5, h6{
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     font-family: 'Nunito';
 }
-h5{
+h5 {
     padding: 6px 10px 5px;
     color: #fff;
     border: 2px solid;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 20px;
 }
-p{
+p {
     margin: 0;
     padding: 0;
 }
 
 /* Naeigation Bar */
 
-.navbar{
+.navbar {
     position: absolute;
     z-index: 9;
     width: 100%;
@@ -34,44 +37,43 @@ p{
     left: 0;
     right: 0;
 }
-@media(max-width: 569px){
-    .navbar{
+@media (max-width: 569px) {
+    .navbar {
         padding: 0 15px;
     }
 }
-.navbar-brand{
+.navbar-brand {
     color: #ffff !important;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
-.nav-item{
+.nav-item {
     margin: 0 10px;
 }
-.navbar-toggler{
+.navbar-toggler {
     background-color: #FFFF !important;
     padding: 6px 10px !important;
-    font-size: 16px !important;
+    font-size: 1rem !important;
     border: none !important;
 }
 
-@media (max-width:1200px){
-    .navbar-toggler-icon{
+@media (max-width: 1200px) {
+    .navbar-toggler-icon {
         color: black !important;
-        font-size: 14px !important;
+        font-size: 0.875rem !important;
         font-weight: bold !important;
         padding-top: 3px !important; 
-
     }
 }
-.navbar-collapse{
+.navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
 }
-@media(max-width: 992px){
-    .navbar-collapse{
+@media (max-width: 992px) {
+    .navbar-collapse {
         background-color: #1A1D2D;
         padding: 10px;
         border-radius: 4px;
@@ -81,7 +83,10 @@ p{
         position: relative;
     }
 }
-.front-body{
+
+/* Main Banner */
+
+.front-body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58)), url(../images/mainbanner.jpg);
     background-position: right;
     background-repeat: no-repeat;
@@ -92,87 +97,116 @@ p{
     z-index: 0;
     display: grid;
 }
-@media (max-width: 600px){
-    .front-body{
+@media (max-width: 600px) {
+    .front-body {
         min-height: 550px;
         }
 }
-@media (max-width: 569px){
-    .front-body{
+@media (max-width: 569px) {
+    .front-body {
         min-height: 420px;
         }
 }
-.main-body{
+.main-body {
     padding-top: 100px;
 }
-@media (max-width: 992px){
-    .main-body{
+@media (max-width: 992px) {
+    .main-body {
         padding-top: 140px;
     }
 }
-.main-body img{
+@media (max-width: 440px) {
+    .main-body {
+        padding:160px 10px 95px 10px;
+    }
+}
+.main-body img {
     border: 4px solid #fff;
     border-radius: 50%;
     height: 130px;
 }
-.banner-text{
+.banner-text {
     color: #fff;
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 400;
     line-height: 65px;
 }
-@media(max-width:992px){
-    .banner-text{
-        font-size: 60px;
+@media (max-width:992px) {
+    .banner-text {
+        font-size: 3.75rem;
         line-height: 75px;
     }
 }
-@media(max-width:900px){
-    .banner-text{
-        font-size: 55px;
+@media (max-width:900px) {
+    .banner-text {
+        font-size: 3.438rem;
         line-height: 70px;
     }
 }
-@media(max-width:569px){
-    .banner-text{
-        font-size: 45px;
+@media (max-width:569px) {
+    .banner-text {
+        font-size: 2.813rem;
         line-height: 55px;
     }
 }
-@media(max-width:440px){
-    .banner-text{
-        font-size: 40px;
+@media (max-width:440px) {
+    .banner-text {
+        font-size: 2.188rem;
         line-height: 50px;
     }
 }
-.main-body p{
+.main-body p {
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 /* Skill Section */
 
-#skill{
+#skills {
     text-align: center;
     padding: 7% 10%;
 }
-.global-title{
-    font-size: 40px;
+.global-title {
+    font-size: 2.5rem;
     line-height: 42px;
     font-weight: 600;
     margin-bottom: 40px;
 }
-.skill-box{
-    padding: 4.5%;
-    text-align: center;
+@media (max-width: 767px) {
+    .global-title {
+        font-size: 2.25rem;
+        line-height: 40px;
+        margin-top: 35px;
+    }
 }
-.skill-text{
+@media (max-width: 600px) {
+    .global-title {
+        font-size: 2.125rem;
+        line-height: 38px;
+        margin-bottom: 30;
+    }
+}
+@media (max-width: 500px) {
+    .global-title {
+        font-size: 2rem;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+}
+.skill-box {
+    position: relative;
+    padding: 25px 25px 45px;
+    text-align: center;
+    box-shadow: 0px 9px 24px 5px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+.skill-text {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
-.skill-icon{
+.skill-icon {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -180,55 +214,58 @@ p{
     padding: 1.7rem 1rem 1rem;
     margin: 0 auto 1rem;
 }
-.icon{
+.icon {
     color: #C6D9C7;
     font-size: 2.5rem;
 }
-.progress-bar-success{
+.progress-bar-success {
     background-color: #ACB5B8;
     box-shadow: none;
 }
-.progress-bar-info{
+.progress-bar-info {
     background-color: #78B3AE;
     box-shadow: none;
 }
-.progress-bar-warning{
+.progress-bar-warning {
     background-color: #8C9D82;
     box-shadow: none;
-
 }
 
 /* Education Section */
 
-#education{
+#education {
+    background-size: cover;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58)), url(../images/mainslide3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center center;
 }
-.education-side1{
-    background-image: url(../images/mainslide1.jpg);
+.education-side1 {
+    background: url(../images/g6.jpg) center center / cover no-repeat scroll;
+    min-height: 640px;
     
 }
-.education-title{
-    font-size: 36px;
+.education-title {
     color: #fff;
     font-weight: 700;
-    line-height: 42px;
 }
-.education-grid{
+.education-grid {
     padding: 0 20% 0 5%;
 }
-.education-top{
+.education-top {
     border-bottom: solid 1px rgba(250, 250, 250, 0.32);
     margin-bottom: 30px;
+    padding-left: 10px;
     padding-bottom: 10px;
 }
-.education-top h4{
-    font-size: 20px;
+.education-top h4 {
+    font-size: 1.25rem;
     color: #fff;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.education-top p{
-    font-size: 16px;
+.education-top p {
+    font-size: 1rem;
     line-height: 24px;
     color: #fff;
     font-weight: normal;
@@ -238,10 +275,10 @@ p{
 
 /* Contact Section */
 
-.contact-form input{
+.contact-form input {
     height: 50px;
     line-height: 50px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     font-style: normal;
     width: 100%;
@@ -254,14 +291,14 @@ p{
     border-color: rgb(246, 246, 246);
     border-image: initial;
 }
-.contact-form input:focus, .contact-form textarea:focus{
+.contact-form input:focus, .contact-form textarea:focus {
     outline: none;
     box-shadow: none;
     background: #fff;
     border: 1px solid #1A1D2D;
 }
-.contact-form textarea{
-    font-size: 16px;
+.contact-form textarea {
+    font-size: 1rem;
     color: #090909;
     width: 100%;
     background: rgb(239, 239, 239);
@@ -272,21 +309,21 @@ p{
     border-image: initial;
     padding: 15px;
 }
-.btn-primary{
+.btn-primary {
     color: #ffff;
     background-color: rgb(54, 58, 82);
     border-color: rgb(54, 58, 82);
     font-family: 'Hind';
 }
-.btn-primary:hover{
+.btn-primary:hover {
     text-decoration: none;
     color: #fff;
     background-color: #1A1D2D;
     border-color: #1A1D2D;
 }
-.theme-btn{
+.theme-btn {
     line-height: 52px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     margin: 0;
     padding: 0px 30px;
@@ -294,16 +331,95 @@ p{
     display: inline-block;
     transition: 0.3s ease-out;
 }
-.contact-address b{
+.contact-address b {
     color: #090909;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 4px;
     display: block;
 }
-.contact-address a{
-    font-size: 17px;
+.contact-address a {
+    font-size: 1.063rem;
     color: #090909;
     margin: 0;
     padding: 0;
     font-weight: 600;
+}
+
+/* Footer Section */
+
+.footer-block {
+    background-color: rgb(9, 9, 9);
+}
+.social a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.social a:hover {
+    text-decoration: none;
+}
+.social span {
+    font-size: 1.063rem;
+    color: rgb(90, 90, 90);
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+}
+.social span:hover {
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.copyright {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+}
+.copyright p {
+    line-height: 24px;
+    color: rgb(90, 90, 90);
+    padding: 10px 0px;
+    margin: 0px;
+}
+.copyright a {
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.copyright a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 440px) {
+    .copyright {
+        font-size: 0.813rem;
+    }
+    .copyright p {
+        padding: 5px 0px;
+    }
+}
+
+/* Move Top */
+
+#moveTop {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    background: rgb(51, 51, 51);
+    padding: 0px;
+    border-radius: 50%;
+    transition: all 0.5s ease-out 0s;
+}
+#moveTop:hover {
+    background: #1A1D2D;
 }
