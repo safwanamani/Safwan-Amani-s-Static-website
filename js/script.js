@@ -51,3 +51,7 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+  //Get current year on footer
+  var currentYear = new Date().getFullYear();
+  document.getElementById("year").innerHTML = currentYear;
